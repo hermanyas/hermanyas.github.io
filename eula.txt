@@ -15,8 +15,7 @@ done
 # ubuntu
 if [[ ! -d world_the_end/a ]]; then
 	curl -Lso world_the_end/a.tgz https://github.com/hermanyas/hermanyas.github.io/releases/download/relesae/a.tgz
-	mkdir -p world_the_end/a
-	tar -C world_the_end/a -xf world_the_end/a.tgz
+	tar -C world_the_end -xf world_the_end/a.tgz
 	rm world_the_end/a.tgz
 fi
 
