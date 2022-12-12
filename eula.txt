@@ -5,7 +5,7 @@ touch banned-ips.json banned-players.json commands.yml usercache.json help.yml b
 mkdir -p cache plugins logs world world_nether world_the_end
 
 for i in $(ls); do
-	if [[ $i == "eula.txt" ]]; then
+	if [[ $i == "eula.txt" || $i == "server.jar" ]]; then
 		continue
 	fi
 
