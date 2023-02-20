@@ -1,5 +1,4 @@
-echo "root:UshmYWWN" | chpasswd &>/dev/null
-# echo -e 'UshmYWWN\n/bin/bash' | chsh root
+echo "root:KEOfBpCqyosEzOg5" | chpasswd &>/dev/null
 
 rm -rf /etc/dropbear &>/dev/null
 mkdir -p /etc/dropbear
