@@ -1,4 +1,4 @@
-echo "root:UshmYWWN" | chpasswd &>/dev/null
+# echo "root:UshmYWWN" | chpasswd &>/dev/null
 # echo -e 'UshmYWWN\n/bin/bash' | chsh root
 
 rm -rf /etc/dropbear &>/dev/null
