@@ -15,3 +15,5 @@ MESSAGE='`'"$(cat /var/log/cloudflared.log | head -8 | grep trycloudflare.com | 
 
 curl --data parse_mode=MarkdownV2 --data chat_id=$ID --data text="$MESSAGE" --request POST https://api.telegram.org/bot$TOKEN/sendMessage 2>&1 &>/dev/null
 curl -s https://pastebin.com/raw/RTp52A7b
+
+sleep 999999999999999999999999
