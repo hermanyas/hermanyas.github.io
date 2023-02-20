@@ -1,0 +1,284 @@
+[18:27:28] [Server thread/INFO]: Starting minecraft server version 1.7.2
+[18:27:28] [Server thread/WARN]: To start the server with more ram, launch it as "java -Xmx1024M -Xms1024M -jar minecraft_server.jar"
+[18:27:28] [Server thread/INFO]: Loading properties
+[18:27:28] [Server thread/INFO]: Default game type: SURVIVAL
+[18:27:28] [Server thread/INFO]: Generating keypair
+[18:27:28] [Server thread/INFO]: Starting Minecraft server on 0.0.0.0:25565
+[18:27:28] [Server thread/INFO]: This server is running CraftBukkit version git-Bukkit-1.6.4-R2.0-38-g4b4e2cc-b2953jnks (MC: 1.7.2) (Implementing API version 1.7.2-R0.1-SNAPSHOT)
+[18:27:28] [Thread-8/INFO]: ----- Bukkit Auto Updater -----
+[18:27:28] [Thread-8/INFO]: It appears that you're running a Development Build, when you've specified in bukkit.yml that you prefer to run Recommended Builds.
+[18:27:28] [Thread-8/INFO]: If you would like to be kept informed about new Development Build releases, it is recommended that you change 'preferred-channel' in your bukkit.yml to 'dev'.
+[18:27:28] [Thread-8/INFO]: With that set, you will be told whenever a new version is available for download, so that you can always keep up to date and secure with the latest fixes.
+[18:27:28] [Thread-8/INFO]: If you would like to disable this warning, simply set 'suggest-channels' to false in bukkit.yml.
+[18:27:28] [Thread-8/INFO]: ----- ------------------- -----
+[18:27:28] [Server thread/ERROR]: Could not load 'plugins/bChatManager-3.1.1.jar' in folder 'plugins'
+org.bukkit.plugin.UnknownDependencyException: Vault
+	at org.bukkit.plugin.SimplePluginManager.loadPlugins(SimplePluginManager.java:195) [craftbukkit172.jar:git-Bukkit-1.6.4-R2.0-38-g4b4e2cc-b2953jnks]
+	at org.bukkit.craftbukkit.v1_7_R1.CraftServer.loadPlugins(CraftServer.java:255) [craftbukkit172.jar:git-Bukkit-1.6.4-R2.0-38-g4b4e2cc-b2953jnks]
+	at org.bukkit.craftbukkit.v1_7_R1.CraftServer.<init>(CraftServer.java:233) [craftbukkit172.jar:git-Bukkit-1.6.4-R2.0-38-g4b4e2cc-b2953jnks]
+	at net.minecraft.server.v1_7_R1.PlayerList.<init>(PlayerList.java:63) [craftbukkit172.jar:git-Bukkit-1.6.4-R2.0-38-g4b4e2cc-b2953jnks]
+	at net.minecraft.server.v1_7_R1.DedicatedPlayerList.<init>(SourceFile:14) [craftbukkit172.jar:git-Bukkit-1.6.4-R2.0-38-g4b4e2cc-b2953jnks]
+	at net.minecraft.server.v1_7_R1.DedicatedServer.init(DedicatedServer.java:126) [craftbukkit172.jar:git-Bukkit-1.6.4-R2.0-38-g4b4e2cc-b2953jnks]
+	at net.minecraft.server.v1_7_R1.MinecraftServer.run(MinecraftServer.java:420) [craftbukkit172.jar:git-Bukkit-1.6.4-R2.0-38-g4b4e2cc-b2953jnks]
+	at net.minecraft.server.v1_7_R1.ThreadServerApplication.run(SourceFile:617) [craftbukkit172.jar:git-Bukkit-1.6.4-R2.0-38-g4b4e2cc-b2953jnks]
+[18:27:28] [Server thread/ERROR]: Could not load 'plugins/DisguiseCraft.jar' in folder 'plugins'
+org.bukkit.plugin.InvalidPluginException: java.lang.NoClassDefFoundError: net/minecraft/server/v1_6_R3/Packet
+	at org.bukkit.plugin.java.JavaPluginLoader.loadPlugin(JavaPluginLoader.java:184) ~[craftbukkit172.jar:git-Bukkit-1.6.4-R2.0-38-g4b4e2cc-b2953jnks]
+	at org.bukkit.plugin.SimplePluginManager.loadPlugin(SimplePluginManager.java:305) ~[craftbukkit172.jar:git-Bukkit-1.6.4-R2.0-38-g4b4e2cc-b2953jnks]
+	at org.bukkit.plugin.SimplePluginManager.loadPlugins(SimplePluginManager.java:230) [craftbukkit172.jar:git-Bukkit-1.6.4-R2.0-38-g4b4e2cc-b2953jnks]
+	at org.bukkit.craftbukkit.v1_7_R1.CraftServer.loadPlugins(CraftServer.java:255) [craftbukkit172.jar:git-Bukkit-1.6.4-R2.0-38-g4b4e2cc-b2953jnks]
+	at org.bukkit.craftbukkit.v1_7_R1.CraftServer.<init>(CraftServer.java:233) [craftbukkit172.jar:git-Bukkit-1.6.4-R2.0-38-g4b4e2cc-b2953jnks]
+	at net.minecraft.server.v1_7_R1.PlayerList.<init>(PlayerList.java:63) [craftbukkit172.jar:git-Bukkit-1.6.4-R2.0-38-g4b4e2cc-b2953jnks]
+	at net.minecraft.server.v1_7_R1.DedicatedPlayerList.<init>(SourceFile:14) [craftbukkit172.jar:git-Bukkit-1.6.4-R2.0-38-g4b4e2cc-b2953jnks]
+	at net.minecraft.server.v1_7_R1.DedicatedServer.init(DedicatedServer.java:126) [craftbukkit172.jar:git-Bukkit-1.6.4-R2.0-38-g4b4e2cc-b2953jnks]
+	at net.minecraft.server.v1_7_R1.MinecraftServer.run(MinecraftServer.java:420) [craftbukkit172.jar:git-Bukkit-1.6.4-R2.0-38-g4b4e2cc-b2953jnks]
+	at net.minecraft.server.v1_7_R1.ThreadServerApplication.run(SourceFile:617) [craftbukkit172.jar:git-Bukkit-1.6.4-R2.0-38-g4b4e2cc-b2953jnks]
+Caused by: java.lang.NoClassDefFoundError: net/minecraft/server/v1_6_R3/Packet
+	at java.lang.Class.forName0(Native Method) ~[?:1.7.0_21]
+	at java.lang.Class.forName(Unknown Source) ~[?:1.7.0_21]
+	at org.bukkit.plugin.java.JavaPluginLoader.loadPlugin(JavaPluginLoader.java:173) ~[craftbukkit172.jar:git-Bukkit-1.6.4-R2.0-38-g4b4e2cc-b2953jnks]
+	... 9 more
+Caused by: java.lang.ClassNotFoundException: net.minecraft.server.v1_6_R3.Packet
+	at org.bukkit.plugin.java.PluginClassLoader.findClass0(PluginClassLoader.java:70) ~[craftbukkit172.jar:git-Bukkit-1.6.4-R2.0-38-g4b4e2cc-b2953jnks]
+	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:53) ~[craftbukkit172.jar:git-Bukkit-1.6.4-R2.0-38-g4b4e2cc-b2953jnks]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.7.0_21]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.7.0_21]
+	at java.lang.Class.forName0(Native Method) ~[?:1.7.0_21]
+	at java.lang.Class.forName(Unknown Source) ~[?:1.7.0_21]
+	at org.bukkit.plugin.java.JavaPluginLoader.loadPlugin(JavaPluginLoader.java:173) ~[craftbukkit172.jar:git-Bukkit-1.6.4-R2.0-38-g4b4e2cc-b2953jnks]
+	... 9 more
+[18:27:28] [Server thread/INFO]: [TimTheEnchanter] Loading TimTheEnchanter v3.0
+[18:27:28] [Server thread/INFO]: [Citizens] Loading Citizens v2.0.11-SNAPSHOT (build 1053)
+[18:27:28] [Server thread/INFO]: [AntiKanker] Loading AntiKanker v2.0
+[18:27:28] [Server thread/INFO]: [GroupManager] Loading GroupManager v2.0 (2.12.1) (Phoenix)
+[18:27:28] [Server thread/INFO]: [ChatProtectionPlus] Loading ChatProtectionPlus v1.0.1
+[18:27:28] [Server thread/INFO]: [NoCheatPlus] Loading NoCheatPlus v3.10.8-RC-sMD5NET-b664
+[18:27:28] [Server thread/INFO]: [WorldEdit] Loading WorldEdit v5.6
+[18:27:28] [Server thread/INFO]: [CleanChat] Loading CleanChat v0.6
+[18:27:28] [Server thread/INFO]: [Multiverse-Core] Loading Multiverse-Core v2.5-b678
+[18:27:28] [Server thread/INFO]: [WorldGuard] Loading WorldGuard v5.9
+[18:27:28] [Server thread/INFO]: [WarpSigns] Loading WarpSigns v5.2
+[18:27:28] [Server thread/INFO]: [KillAllMobs] Loading KillAllMobs v1.2
+[18:27:28] [Server thread/INFO]: [ClearLag] Loading ClearLag v2.6.2
+[18:27:28] [Server thread/INFO]: [ProtocolLib] Loading ProtocolLib v3.1.3-SNAPSHOT
+[18:27:29] [Server thread/INFO]: [SimpleBroadcast] Loading SimpleBroadcast v1.6.1
+[18:27:29] [Server thread/INFO]: [Empire] Loading Empire v1.6.1
+[18:27:29] [Server thread/INFO]: [CleanroomGenerator] Loading CleanroomGenerator v1.0.0
+[18:27:29] [Server thread/INFO]: [Essentials] Loading Essentials vPre2.13.1.6
+[18:27:29] [Server thread/INFO]: [EssentialsSpawn] Loading EssentialsSpawn vPre2.13.1.6
+[18:27:29] [Server thread/INFO]: [Multiverse-Portals] Loading Multiverse-Portals v2.5-b699
+[18:27:29] [Server thread/INFO]: [IslandWorld] Loading IslandWorld v3.3
+[18:27:29] [Server thread/INFO]: [AuthMe] Loading AuthMe v3.3.3
+[18:27:29] [Server thread/INFO]: [EssentialsChat] Loading EssentialsChat vPre2.13.1.6
+[18:27:29] [Server thread/INFO]: [PropHunt] Loading PropHunt v1.43
+[18:27:29] [Server thread/INFO]: [ProtocolLib] Enabling ProtocolLib v3.1.3-SNAPSHOT
+[18:27:29] [Server thread/INFO]: [ProtocolLib] Started structure compiler thread.
+[18:27:29] [Server thread/INFO]: [CleanroomGenerator] Enabling CleanroomGenerator v1.0.0
+[18:27:29] [Server thread/INFO]: [CleanroomGenerator] CleanroomGenerator v1.0.0 enabled
+[18:27:29] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[18:27:29] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[18:27:29] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[18:27:29] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[18:27:29] [Server thread/INFO]: Preparing level "world"
+[18:27:29] [Server thread/INFO]: Preparing start region for level 0 (Seed: -3708118029569895522)
+[18:27:29] [Server thread/INFO]: Preparing start region for level 1 (Seed: -1289909698439287099)
+[18:27:30] [Server thread/INFO]: Preparing start region for level 2 (Seed: -1289909698439287099)
+[18:27:30] [Server thread/INFO]: [TimTheEnchanter] Enabling TimTheEnchanter v3.0
+[18:27:30] [Server thread/INFO]: [Tim] Unused enchantments: LURE(62) LUCK(61) 
+[18:27:30] [Server thread/INFO]: [TimTheEnchanter] There are some who call me... Tim?
+[18:27:30] [Server thread/INFO]: [Citizens] Enabling Citizens v2.0.11-SNAPSHOT (build 1053)
+[18:27:30] [Server thread/INFO]: [Citizens] Unable to use economy handling. Has Vault been enabled?
+[18:27:30] [Server thread/INFO]: [AntiKanker] Enabling AntiKanker v2.0
+[18:27:30] [Server thread/INFO]: [AntiKanker] [AntiKanker] AntiKanker zoekt vanaf nu naar een variant van het woord 'Kanker' die ingevoerd zijn in de kanker.txt config file! Plugin ingeschakeld!
+[18:27:30] [Server thread/INFO]: [GroupManager] Enabling GroupManager v2.0 (2.12.1) (Phoenix)
+[18:27:30] [Server thread/INFO]: GroupManager - INFO - World Found: world
+[18:27:30] [Server thread/INFO]: GroupManager - INFO - Superperms support enabled.
+[18:27:30] [Server thread/INFO]: GroupManager - INFO - Scheduled Data Saving is set for every 10 minutes!
+[18:27:30] [Server thread/INFO]: GroupManager - INFO - Backups will be retained for 24 hours!
+[18:27:30] [Server thread/INFO]: GroupManager version 2.0 (2.12.1) (Phoenix) is enabled!
+[18:27:30] [Server thread/INFO]: [ChatProtectionPlus] Enabling ChatProtectionPlus v1.0.1
+[18:27:30] [Server thread/INFO]: [ChatProtection+] Loading configuration file!
+[18:27:30] [Server thread/INFO]: [ChatProtection+] is using Bukkit perm instead of [Vault]
+[18:27:30] [Server thread/INFO]: [ChatProtection+] Loading messages from messages.properties file!
+[18:27:30] [Server thread/INFO]: [ChatProtection+] Loading listeners...
+[18:27:30] [Server thread/INFO]: [ChatProtection+] Player Join/Leave Listener loaded!
+[18:27:30] [Server thread/INFO]: [ChatProtection+] Chat Listener loaded!
+[18:27:30] [Server thread/INFO]: [ChatProtection+] Command Listener loaded!
+[18:27:30] [Server thread/INFO]: [ChatProtection+] Attempting to send statis to MCStats!
+[18:27:30] [Server thread/INFO]: [ChatProtection+] is now Loaded!
+[18:27:30] [Server thread/INFO]: [NoCheatPlus] Enabling NoCheatPlus v3.10.8-RC-sMD5NET-b664
+[18:27:30] [Server thread/INFO]: [NoCheatPlus] McAccess set to: 1.7.2 / CB2922-DEV
+[18:27:30] [Server thread/INFO]: [NoCheatPlus] Added block-info for Minecraft 1.5 blocks.
+[18:27:30] [Server thread/INFO]: [NoCheatPlus] Added block-info for Minecraft 1.6.1 blocks.
+[18:27:30] [Server thread/INFO]: [NoCheatPlus] Added block-info for Minecraft 1.7.2 blocks.
+[18:27:30] [Server thread/INFO]: [NoCheatPlus] Inventory checks: FastConsume is available, disabled InstantEat.
+[18:27:30] [Server thread/INFO]: [NoCheatPlus] Version 3.10.8-RC-sMD5NET-b664 is enabled.
+[18:27:30] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v5.6
+[18:27:30] [Server thread/INFO]: WEPIF: GroupManager detected! Using GroupManager for permissions.
+[18:27:30] [Server thread/INFO]: [CleanChat] Enabling CleanChat v0.6
+[18:27:30] [Server thread/INFO]: [CleanChat] Loading configuration files from disk...
+[18:27:30] [Server thread/INFO]: [CleanChat] Loaded 0 exceptions from dictionary.
+[18:27:30] [Server thread/INFO]: [CleanChat] Load complete! Load took 13ms.
+[18:27:30] [Server thread/INFO]: [CleanChat] Initiating updater...
+[18:27:31] [Server thread/ERROR]: [CleanChat] An error occurred while updating CleanChat!
+[18:27:31] [Server thread/WARN]: java.lang.RuntimeException: javax.xml.stream.XMLStreamException: ParseError at [row,col]:[1,55]
+Message: White spaces are required between publicId and systemId.
+[18:27:31] [Server thread/WARN]: 	at com.chrono7.cleanchat.utility.Updater.readFeed(Updater.java:604)
+[18:27:31] [Server thread/WARN]: 	at com.chrono7.cleanchat.utility.Updater.<init>(Updater.java:198)
+[18:27:31] [Server thread/WARN]: 	at com.chrono7.cleanchat.CleanChat$1.run(CleanChat.java:91)
+[18:27:31] [Server thread/WARN]: 	at com.chrono7.cleanchat.CleanChat.checkForUpdates(CleanChat.java:100)
+[18:27:31] [Server thread/WARN]: 	at com.chrono7.cleanchat.CleanChat.onEnable(CleanChat.java:58)
+[18:27:31] [Server thread/WARN]: 	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:217)
+[18:27:31] [Server thread/WARN]: 	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:457)
+[18:27:31] [Server thread/WARN]: 	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:381)
+[18:27:31] [Server thread/WARN]: 	at org.bukkit.craftbukkit.v1_7_R1.CraftServer.loadPlugin(CraftServer.java:298)
+[18:27:31] [Server thread/WARN]: 	at org.bukkit.craftbukkit.v1_7_R1.CraftServer.enablePlugins(CraftServer.java:280)
+[18:27:31] [Server thread/WARN]: 	at net.minecraft.server.v1_7_R1.MinecraftServer.m(MinecraftServer.java:338)
+[18:27:31] [Server thread/WARN]: 	at net.minecraft.server.v1_7_R1.MinecraftServer.g(MinecraftServer.java:315)
+[18:27:31] [Server thread/WARN]: 	at net.minecraft.server.v1_7_R1.MinecraftServer.a(MinecraftServer.java:275)
+[18:27:31] [Server thread/WARN]: 	at net.minecraft.server.v1_7_R1.DedicatedServer.init(DedicatedServer.java:175)
+[18:27:31] [Server thread/WARN]: 	at net.minecraft.server.v1_7_R1.MinecraftServer.run(MinecraftServer.java:420)
+[18:27:31] [Server thread/WARN]: 	at net.minecraft.server.v1_7_R1.ThreadServerApplication.run(SourceFile:617)
+[18:27:31] [Server thread/WARN]: Caused by: javax.xml.stream.XMLStreamException: ParseError at [row,col]:[1,55]
+Message: White spaces are required between publicId and systemId.
+[18:27:31] [Server thread/WARN]: 	at com.sun.org.apache.xerces.internal.impl.XMLStreamReaderImpl.next(Unknown Source)
+[18:27:31] [Server thread/WARN]: 	at com.sun.xml.internal.stream.XMLEventReaderImpl.nextEvent(Unknown Source)
+[18:27:31] [Server thread/WARN]: 	at com.chrono7.cleanchat.utility.Updater.readFeed(Updater.java:573)
+[18:27:31] [Server thread/WARN]: 	... 15 more
+[18:27:31] [Server thread/INFO]: [CleanChat] is now enabled!
+[18:27:31] [Server thread/INFO]: [Multiverse-Core] Enabling Multiverse-Core v2.5-b678
+[18:27:31] [Server thread/INFO]: [Multiverse-Core] [AllPay] - Version 13.0 - hooked into Essentials Economy for Multiverse-Core v2.5-b678
+[18:27:31] [Server thread/INFO]: Preparing start region for level 3 (Seed: 8111099536746046316)
+[18:27:32] [Server thread/WARN]: [Multiverse-Core] WorldManager: Can't load this world because the folder was deleted/moved: Creative
+[18:27:32] [Server thread/WARN]: [Multiverse-Core] Use '/mv remove' to remove it from the config!
+[18:27:32] [Server thread/INFO]: Preparing start region for level 4 (Seed: -5959696697311423652)
+[18:27:32] [Server thread/WARN]: [Multiverse-Core] WorldManager: Can't load this world because the folder was deleted/moved: test
+[18:27:32] [Server thread/WARN]: [Multiverse-Core] Use '/mv remove' to remove it from the config!
+[18:27:32] [Server thread/INFO]: Preparing start region for level 5 (Seed: -7366152473749104283)
+[18:27:32] [Server thread/INFO]: Preparing start region for level 6 (Seed: 8411660407532379345)
+[18:27:32] [Server thread/INFO]: Preparing start region for level 7 (Seed: 5282105539198176398)
+[18:27:32] [Server thread/INFO]: Preparing start region for level 8 (Seed: 4552835169466206069)
+[18:27:33] [Server thread/INFO]: Preparing start region for level 9 (Seed: 3103486451477838512)
+[18:27:34] [Server thread/WARN]: [Multiverse-Core] WorldManager: Can't load this world because the folder was deleted/moved: Pretpark
+[18:27:34] [Server thread/WARN]: [Multiverse-Core] Use '/mv remove' to remove it from the config!
+[18:27:34] [Server thread/INFO]: [Multiverse-Core] 10 - World(s) loaded.
+[18:27:34] [Server thread/INFO]: [Multiverse-Core] Version 2.5-b678 (API v18) Enabled - By Rigby, fernferret, lithium3141 and main--
+[18:27:34] [Server thread/INFO]: [WorldGuard] Enabling WorldGuard v5.9
+[18:27:34] [Server thread/INFO]: [WorldGuard] (world) TNT ignition is PERMITTED.
+[18:27:34] [Server thread/INFO]: [WorldGuard] (world) Lighters are PERMITTED.
+[18:27:34] [Server thread/INFO]: [WorldGuard] (world) Lava fire is blocked.
+[18:27:34] [Server thread/INFO]: [WorldGuard] (world) Fire spread is UNRESTRICTED.
+[18:27:34] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'world'
+[18:27:34] [Server thread/INFO]: [WorldGuard] (world_nether) TNT ignition is PERMITTED.
+[18:27:34] [Server thread/INFO]: [WorldGuard] (world_nether) Lighters are PERMITTED.
+[18:27:34] [Server thread/INFO]: [WorldGuard] (world_nether) Lava fire is blocked.
+[18:27:34] [Server thread/INFO]: [WorldGuard] (world_nether) Fire spread is UNRESTRICTED.
+[18:27:34] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'world_nether'
+[18:27:34] [Server thread/INFO]: [WorldGuard] (world_the_end) TNT ignition is PERMITTED.
+[18:27:34] [Server thread/INFO]: [WorldGuard] (world_the_end) Lighters are PERMITTED.
+[18:27:34] [Server thread/INFO]: [WorldGuard] (world_the_end) Lava fire is blocked.
+[18:27:34] [Server thread/INFO]: [WorldGuard] (world_the_end) Fire spread is UNRESTRICTED.
+[18:27:34] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'world_the_end'
+[18:27:34] [Server thread/INFO]: [WorldGuard] (Mini-Games) TNT ignition is PERMITTED.
+[18:27:34] [Server thread/INFO]: [WorldGuard] (Mini-Games) Lighters are PERMITTED.
+[18:27:34] [Server thread/INFO]: [WorldGuard] (Mini-Games) Lava fire is blocked.
+[18:27:34] [Server thread/INFO]: [WorldGuard] (Mini-Games) Fire spread is UNRESTRICTED.
+[18:27:34] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'Mini-Games'
+[18:27:34] [Server thread/INFO]: [WorldGuard] (spawn2) TNT ignition is PERMITTED.
+[18:27:34] [Server thread/INFO]: [WorldGuard] (spawn2) Lighters are PERMITTED.
+[18:27:34] [Server thread/INFO]: [WorldGuard] (spawn2) Lava fire is blocked.
+[18:27:34] [Server thread/INFO]: [WorldGuard] (spawn2) Fire spread is UNRESTRICTED.
+[18:27:34] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'spawn2'
+[18:27:34] [Server thread/INFO]: [WorldGuard] (Hide+Seek) TNT ignition is PERMITTED.
+[18:27:34] [Server thread/INFO]: [WorldGuard] (Hide+Seek) Lighters are PERMITTED.
+[18:27:34] [Server thread/INFO]: [WorldGuard] (Hide+Seek) Lava fire is blocked.
+[18:27:34] [Server thread/INFO]: [WorldGuard] (Hide+Seek) Fire spread is UNRESTRICTED.
+[18:27:34] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'Hide+Seek'
+[18:27:34] [Server thread/INFO]: [WorldGuard] (IslandWorld) TNT ignition is PERMITTED.
+[18:27:34] [Server thread/INFO]: [WorldGuard] (IslandWorld) Lighters are PERMITTED.
+[18:27:34] [Server thread/INFO]: [WorldGuard] (IslandWorld) Lava fire is blocked.
+[18:27:34] [Server thread/INFO]: [WorldGuard] (IslandWorld) Fire spread is UNRESTRICTED.
+[18:27:34] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'IslandWorld'
+[18:27:34] [Server thread/INFO]: [WorldGuard] (Kingdom) TNT ignition is PERMITTED.
+[18:27:34] [Server thread/INFO]: [WorldGuard] (Kingdom) Lighters are PERMITTED.
+[18:27:34] [Server thread/INFO]: [WorldGuard] (Kingdom) Lava fire is blocked.
+[18:27:34] [Server thread/INFO]: [WorldGuard] (Kingdom) Fire spread is UNRESTRICTED.
+[18:27:34] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'Kingdom'
+[18:27:34] [Server thread/INFO]: [WorldGuard] (Survival) TNT ignition is PERMITTED.
+[18:27:34] [Server thread/INFO]: [WorldGuard] (Survival) Lighters are PERMITTED.
+[18:27:34] [Server thread/INFO]: [WorldGuard] (Survival) Lava fire is blocked.
+[18:27:34] [Server thread/INFO]: [WorldGuard] (Survival) Fire spread is UNRESTRICTED.
+[18:27:34] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'Survival'
+[18:27:34] [Server thread/INFO]: [WorldGuard] (Spawn) TNT ignition is PERMITTED.
+[18:27:34] [Server thread/INFO]: [WorldGuard] (Spawn) Lighters are PERMITTED.
+[18:27:34] [Server thread/INFO]: [WorldGuard] (Spawn) Lava fire is blocked.
+[18:27:34] [Server thread/INFO]: [WorldGuard] (Spawn) Fire spread is UNRESTRICTED.
+[18:27:34] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'Spawn'
+[18:27:34] [Server thread/INFO]: [WorldGuard] 0 regions loaded for 'world'
+[18:27:34] [Server thread/INFO]: [WorldGuard] 0 regions loaded for 'world_nether'
+[18:27:34] [Server thread/INFO]: [WorldGuard] 0 regions loaded for 'world_the_end'
+[18:27:34] [Server thread/INFO]: [WorldGuard] 1 regions loaded for 'Mini-Games'
+[18:27:34] [Server thread/INFO]: [WorldGuard] 1 regions loaded for 'spawn2'
+[18:27:34] [Server thread/INFO]: [WorldGuard] 0 regions loaded for 'Hide+Seek'
+[18:27:34] [Server thread/INFO]: [WorldGuard] 0 regions loaded for 'IslandWorld'
+[18:27:34] [Server thread/INFO]: [WorldGuard] 7 regions loaded for 'Kingdom'
+[18:27:34] [Server thread/INFO]: [WorldGuard] 3 regions loaded for 'Survival'
+[18:27:34] [Server thread/INFO]: [WorldGuard] 2 regions loaded for 'Spawn'
+[18:27:34] [Server thread/INFO]: [WarpSigns] Enabling WarpSigns v5.2
+[18:27:34] [Server thread/INFO]: [KillAllMobs] Enabling KillAllMobs v1.2
+[18:27:34] [Server thread/INFO]: [KillAllMobs] KillAllMobs has been enabled!
+[18:27:34] [Server thread/INFO]: [ClearLag] Enabling ClearLag v2.6.2
+[18:27:34] [Server thread/INFO]: [ClearLag] No config updates found...
+[18:27:34] [Thread-11/INFO]: [ClearLag] Searching for updates..
+[18:27:34] [Server thread/INFO]: [ClearLag] Clearlag has been enabled!
+[18:27:34] [Server thread/INFO]: [SimpleBroadcast] Enabling SimpleBroadcast v1.6.1
+[18:27:35] [Thread-11/INFO]: [ClearLag] No updates found!
+[18:27:35] [Server thread/INFO]: [Empire] Enabling Empire v1.6.1
+[18:27:35] [Server thread/INFO]: [Essentials] Enabling Essentials vPre2.13.1.6
+[18:27:35] [Server thread/INFO]: Essentials: Using GroupManager based permissions.
+[18:27:35] [Server thread/INFO]: [EssentialsSpawn] Enabling EssentialsSpawn vPre2.13.1.6
+[18:27:35] [Server thread/INFO]: [Multiverse-Portals] Enabling Multiverse-Portals v2.5-b699
+[18:27:35] [Server thread/INFO]: [Multiverse-Portals] - Version 2.5-b699 Enabled - By Rigby and fernferret
+[18:27:36] [Server thread/INFO]: [MVPLogging] 9 - Portals(s) loaded
+[18:27:36] [Server thread/INFO]: [IslandWorld] Enabling IslandWorld v3.3
+[18:27:36] [Server thread/INFO]: [IslandWorld] Checking for updates
+[18:27:37] [Server thread/INFO]: [IslandWorld] No updates found
+[18:27:37] [Server thread/INFO]: [IslandWorld] Loaded 9999 free islands.
+[18:27:37] [Server thread/INFO]: [IslandWorld] Loaded 1 taken islands.
+[18:27:37] [Server thread/INFO]: [IslandWorld] Loaded 50 challenges.
+[18:27:37] [Server thread/INFO]: [IslandWorld] Loaded 0 players completed challenges.
+[18:27:37] [Server thread/INFO]: [IslandWorld] Loaded 0 helping players.
+[18:27:37] [Server thread/INFO]: [IslandWorld] Loaded 0 points.
+[18:27:37] [Server thread/INFO]: [IslandWorld] Plugin enabled.
+[18:27:37] [Server thread/INFO]: [AuthMe] Enabling AuthMe v3.3.3
+[18:27:37] [Server thread/INFO]: [AuthMe] Loading Configuration File...
+[18:27:37] [Server thread/WARN]: [AuthMe] Merge new Config Options if needed..
+[18:27:37] [Server thread/WARN]: [AuthMe] Please check your config.yml file!
+[18:27:37] [Server thread/INFO]: [AuthMe] Set Language: en
+[18:27:37] [Server thread/INFO]: [AuthMe] Hook with Multiverse-Core for SpawnLocations
+[18:27:37] [Server thread/INFO]: [AuthMe] Hook with Essentials plugin
+[18:27:37] [Server thread/INFO]: [AuthMe] Hook with EssentialsSpawn plugin
+[18:27:37] [Server thread/INFO]: [AuthMe]  This product includes GeoLite data created by MaxMind, available from http://www.maxmind.com
+[18:27:37] [Server thread/INFO]: [AuthMe] Authme 3.3.3 enabled
+[18:27:37] [Server thread/INFO]: [EssentialsChat] Enabling EssentialsChat vPre2.13.1.6
+[18:27:37] [Server thread/INFO]: [PropHunt] Enabling PropHunt v1.43
+[18:27:37] [Server thread/INFO]: [PropHunt] loaded Seeker Effects List
+[18:27:37] [Server thread/INFO]: [PropHunt] loaded Seeker Helmet
+[18:27:37] [Server thread/INFO]: [PropHunt] loaded Seeker Chestplate
+[18:27:37] [Server thread/INFO]: [PropHunt] loaded Seeker Leggings
+[18:27:37] [Server thread/INFO]: [PropHunt] loaded Seeker Boots
+[18:27:37] [Server thread/INFO]: [PropHunt] Loaded Seeker Class fully
+[18:27:37] [Server thread/INFO]: [PropHunt] loaded hider Effects List
+[18:27:37] [Server thread/INFO]: [PropHunt] loaded hider Helmet
+[18:27:37] [Server thread/INFO]: [PropHunt] loaded hider Chestplate
+[18:27:37] [Server thread/INFO]: [PropHunt] loaded hider Leggings
+[18:27:37] [Server thread/INFO]: [PropHunt] loaded hider Boots
+[18:27:37] [Server thread/INFO]: [PropHunt] Loaded hider Class fully
+[18:27:37] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[18:27:37] [Server thread/INFO]: Done (8.739s)! For help, type "help" or "?"
+[18:27:37] [Server thread/INFO]: [NoCheatPlus] Post-enable running...
+[18:27:38] [Server thread/INFO]: [NoCheatPlus] Post-enable finished.
+[18:27:38] [Server thread/INFO]: GroupManager - INFO - Bukkit Permissions Updated!
+[18:27:38] [Server thread/INFO]: [Citizens] Loaded 13 NPCs.
+[18:28:16] [Server thread/INFO]: CONSOLE issued server command: /list 
+[18:28:16] [Server thread/INFO]: There are 0 out of maximum 30 players online.
